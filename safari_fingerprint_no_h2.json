@@ -1,0 +1,126 @@
+{
+    "packet_info": {
+      "packet_length": "583",
+      "timestamp_info": {
+        "time_since_first_frame": "0.000262498 seconds",
+        "time_since_previous_frame": "0.000242844 seconds",
+        "irtt": "0.000019654 seconds"
+      },
+      "tcp_analysis": {
+        "bytes_in_flight": "517",
+        "bytes_sent_since_psh": "517",
+        "conversation_completeness": "Incomplete, ESTABLISHED (7)"
+      }
+    },
+    "ethernet_layer": {
+      "destination": "00:00:00:00:00:00",
+      "source": "00:00:00:00:00:00",
+      "type": "IPv4 (0x0800)",
+      "lg_bit": "Globally unique address (factory default)",
+      "ig_bit": "Individual address (unicast)"
+    },
+    "ip_layer": {
+      "version": "4",
+      "header_length": "20 bytes (5)",
+      "dscp": "CS0",
+      "ecn": "Not-ECT",
+      "total_length": "569",
+      "identification": "0x1dbe (7614)",
+      "flags": "0x40, Don't fragment",
+      "fragment_offset": "0",
+      "ttl": "64",
+      "protocol": "TCP (6)",
+      "header_checksum": "0x1cff",
+      "source_address": "127.0.0.1",
+      "destination_address": "127.0.0.1"
+    },
+    "tcp_layer": {
+      "source_port": "40814",
+      "destination_port": "8443",
+      "stream_index": "22",
+      "tcp_segment_len": "517",
+      "sequence_number": "1    (relative sequence number)",
+      "acknowledgment_number": "1    (relative ack number)",
+      "header_length": "20 bytes (5)",
+      "flags": "·······AP···",
+      "window": "512",
+      "checksum": "0x1cff [validation disabled]",
+      "urgent_pointer": "0",
+      "options": "(12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps"
+    },
+    "tls_layer": {
+      "content_type": "Handshake (22)",
+      "version": "TLS 1.0",
+      "length": "583",
+      "handshake_type": "Client Hello (1)",
+      "handshake_length": "583",
+      "client_version": "1.0",
+      "random": "f244b4576a74f863e59def8451f32557f992c2be0ee791792728904e1a0be00e",
+      "session_id": "39835a062f05fe496e433c88c675ecf8906521ae4ba4cd5b701e77e86fe57c20",
+      "cipher_suites": [
+        "Reserved (GREASE) (0xbaba)",
+        "TLS_AES_128_GCM_SHA256 (0x1301)",
+        "TLS_AES_256_GCM_SHA384 (0x1302)",
+        "TLS_CHACHA20_POLY1305_SHA256 (0x1303)",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)",
+        "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca9)",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca8)",
+        "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (0xc00a)",
+        "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (0xc009)",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009d)",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256 (0x009c)",
+        "TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)",
+        "TLS_RSA_WITH_AES_128_CBC_SHA (0x002f)",
+        "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA (0xc008)",
+        "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA (0xc012)",
+        "TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)"
+      ],
+      "compression_methods": [
+        "null (0)"
+      ],
+      "extensions": {
+        "server_name": "localhost",
+        "supported_groups": [
+          "Reserved (GREASE) (0x7a7a)",
+          "x25519 (0x001d)",
+          "secp256r1 (0x0017)",
+          "secp384r1 (0x0018)",
+          "secp521r1 (0x0019)"
+        ],
+        "signature_algorithms": [
+          "ecdsa_secp256r1_sha256 (0x0403)",
+          "rsa_pss_rsae_sha256 (0x0804)",
+          "rsa_pkcs1_sha256 (0x0401)",
+          "ecdsa_secp384r1_sha384 (0x0503)",
+          "rsa_pss_rsae_sha384 (0x0805)",
+          "rsa_pkcs1_sha384 (0x0501)",
+          "rsa_pss_rsae_sha512 (0x0806)",
+          "rsa_pkcs1_sha512 (0x0601)",
+          "rsa_pkcs1_sha1 (0x0201)"
+        ],
+        "alpn_protocols": [
+          "http/1.1"
+        ],
+        "supported_versions": [
+          "Reserved (GREASE) (0x5a5a)",
+          "TLS 1.3 (0x0304)",
+          "TLS 1.2 (0x0303)",
+          "TLS 1.1 (0x0302)",
+          "TLS 1.0 (0x0301)"
+        ]
+      },
+      "ja3_fullstring": "771,47802-4865-4866-4867-49196-49195-52393-49200-49199-52392-49162-49161-49172-49171-157-156-53-47-49160-49170-10,14906-0-23-65281-10-11-16-5-13-18-51-45-43-27-10794-21,31354-29-23-24-25,0",
+      "ja3_hash": "d3cd44016bb42614a3614c973434df57"
+    },
+    "metadata": {
+      "captured_at": "2025-07-25T02:18:27.915876",
+      "browser": "safari",
+      "version": "18.4.ios",
+      "parser_version": "1.0"
+    }
+  }
